@@ -29,9 +29,17 @@ Route::post('/auth', function () {
     $data = exec("curl -X POST -u \"" .$client_id .":" .$secret ."\" https://bitbucket.org/site/oauth2/access_token -d grant_type=password -d username=".$user ." -d password=" .$password ."");
     $xml = json_decode($data);
 
-    $token = $xml->access_token;
+    if(property_exists ($xml, 'access_token'))
+    {
+        $token = $xml->access_token;
+        return view('auth', ['tokeen' => $token]);
+    }
+    else
+        {
+        print("Invalid credentials. Please try again!");
+        return view('welcome');
+    }
 
-    return view('auth', ['tokeen' => $token]);
 });
 
 
