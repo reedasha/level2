@@ -3,7 +3,7 @@
 Tool for getting pull requests from Bitbucket repositories.
 
 Type public repository's author and name, with a slash between them, following way: "andrewpeterson/neural".<br>
-Authorize with your username, password and OAuth consumer key and secret. Then you will be redirected to another page with your API access token, so that you can access your provate repository's pull requests.
+Authorize with your username, password and OAuth consumer key and secret. Then you will be redirected to another page with your API access token, so that you can access your private repository's pull requests.
 
 The whole application is written in php, laravel framework.
 Build and run application Docker container with the following command:
