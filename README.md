@@ -1,4 +1,4 @@
-<h2>Zensoft test assignment level 2</h2>
+<h2>level 2</h2>
 
 Tool for getting pull requests from Bitbucket repositories.
 
