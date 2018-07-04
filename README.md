@@ -7,7 +7,9 @@ Authorize with your username, password and OAuth consumer key and secret. Then y
 
 The whole application is written in php, laravel framework.
 Build and run application Docker container with the following command:
+```
 "docker build -t zen ."
 "docker run -p 8000:80 --rm zen"
+```
 
 Please enable pop-ups in your browser, so that app will be able to open new windows.
